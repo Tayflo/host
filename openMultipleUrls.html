@@ -1,7 +1,5 @@
 <script>
-
-  //alert("test");
-
+  
   // Grab link from URL params
   const urls_test = [
     "https://chine.in/mandarin/methode/strokes.php?chars=%26%2325105%3B",
@@ -16,6 +14,7 @@
     const url = urls[i];
     window.open(url, '_blank'); 
   }
+  window.opener = self;
   window.close();
 
 </script>

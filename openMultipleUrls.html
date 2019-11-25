@@ -1,0 +1,21 @@
+<script>
+
+  //alert("test");
+
+  // Grab link from URL params
+  const urls_test = [
+    "https://chine.in/mandarin/methode/strokes.php?chars=%26%2325105%3B",
+    "https://chine.in/mandarin/methode/strokes.php?chars=%26%2339184%3B",
+    "https://fr.qr-code-generator.com/solutions/multi-url-qr-code/",
+  ];
+  let string = window.location.href.match(/(?:\?q=)(.+)/)[1];
+  let urls = string.split("&");
+
+  // Open Links
+  for (let i = 0; i < urls.length; i++) {
+    const url = urls[i];
+    window.open(url, '_blank'); 
+  }
+  window.close();
+
+</script>

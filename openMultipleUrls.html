@@ -1,7 +1,6 @@
-Page Blanche à Fermer
+<!doctype html>
 
 <script>
-
   // Getting URLs from URL params
   const urls_test = [
     "https://chine.in/mandarin/methode/strokes.php?chars=%26%2325105%3B",
@@ -16,10 +15,15 @@ Page Blanche à Fermer
     const url = urls[i];
     setTimeout(() => window.open(url, '_blank'), 100); 
   }
-
   /*/ Scripts may close only the windows that were opened by it. No workaround found
   setTimeout("self.close()", 100);
   window.opener = self;
   window.close(); //*/
-
 </script>
+
+<html lang="fr">
+  <body>
+    Page Blanche à Fermer
+  </body>
+</html>
+

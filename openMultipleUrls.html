@@ -1,3 +1,5 @@
+Page Blanche à Fermer
+
 <script>
 
   // Getting URLs from URL params
@@ -12,7 +14,7 @@
   // Open Links
   for (let i = 0; i < urls.length; i++) {
     const url = urls[i];
-    window.open(url, '_blank'); 
+    setTimeout(() => window.open(url, '_blank'), 100); 
   }
 
   /*/ Scripts may close only the windows that were opened by it. No workaround found

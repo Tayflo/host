@@ -1,5 +1,6 @@
 <script>
-  
+
+  // Getting URLs from URL params
   const urls_test = [
     "https://chine.in/mandarin/methode/strokes.php?chars=%26%2325105%3B",
     "https://chine.in/mandarin/methode/strokes.php?chars=%26%2339184%3B",
@@ -13,8 +14,10 @@
     const url = urls[i];
     window.open(url, '_blank'); 
   }
+
+  /*/ Scripts may close only the windows that were opened by it. No workaround found
   setTimeout("self.close()", 100);
   window.opener = self;
-  window.close();
+  window.close(); //*/
 
 </script>

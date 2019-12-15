@@ -13,6 +13,7 @@
   // Open Links
   for (let i = 0; i < urls.length; i++) {
     const url = urls[i];
+    // Add delay to ensure the order of openings
     setTimeout(() => window.open(url, '_blank'), 100); 
   }
   /*/ Scripts may close only the windows that were opened by it. No workaround found

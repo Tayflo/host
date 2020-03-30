@@ -17,7 +17,7 @@
     // Add delay to ensure the order of openings
     setTimeout(() => window.open(url, '_blank'), 100); 
   }
-  window.location.replace(urls[0]); // Redirect the first one
+  setTimeout(() => window.location.replace(urls[0]), 100 * urls.length); // Redirect the first one
   firstWindow.focus();
   /*/ rq: Scripts may close only the windows that were opened by it (and not self)
   setTimeout("self.close()", 100);

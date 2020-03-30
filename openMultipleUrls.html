@@ -9,6 +9,7 @@
   ];
   let string = window.location.href.match(/(?:\?q=)(.+)/)[1];
   let urls = string.split("&");
+  let firstWindow = window;
 
   // Open Links
   window.location.replace(urls[0]); // Redirect the first one
@@ -17,8 +18,8 @@
     // Add delay to ensure the order of openings
     setTimeout(() => window.open(url, '_blank'), 100); 
   }
-  windows.focus();
-  /*/ Scripts may close only the windows that were opened by it. No workaround found
+  firstWindow.focus();
+  /*/ rq: Scripts may close only the windows that were opened by it (and not self)
   setTimeout("self.close()", 100);
   window.opener = self;
   window.close(); //*/

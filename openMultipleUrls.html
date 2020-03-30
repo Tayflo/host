@@ -11,7 +11,8 @@
   let urls = string.split("&");
 
   // Open Links
-  for (let i = 0; i < urls.length; i++) {
+  window.location.replace(urls[0]); // Redirect the first one
+  for (let i = 1; i < urls.length; i++) {
     const url = urls[i];
     // Add delay to ensure the order of openings
     setTimeout(() => window.open(url, '_blank'), 100); 

@@ -17,6 +17,7 @@
     // Add delay to ensure the order of openings
     setTimeout(() => window.open(url, '_blank'), 100); 
   }
+  windows.focus();
   /*/ Scripts may close only the windows that were opened by it. No workaround found
   setTimeout("self.close()", 100);
   window.opener = self;
